@@ -40,3 +40,25 @@ do
 
 done
 echo "TONG LA $sum"
+
+#commit lan 2
+
+for (( i = 0; i < $(($n-1)) ; i++ ))
+do
+   for (( j = $i; j < $n; j++ ))
+   do
+
+      if [[ ${arr[$i]} -gt ${arr[$j]} ]]
+      then
+
+       t=${arr[$i]}
+       arr[$i]=${arr[$j]}
+       arr[$j]=$t
+      fi
+done
+done
+echo "day so sau khi sap xep la : "
+for (( i = 0; i < $n ; i++ ))
+do
+echo "arr[$i] : ${arr[$i]}"
+done
