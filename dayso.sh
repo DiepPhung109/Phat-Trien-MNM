@@ -31,7 +31,7 @@ else
 fi
 
 
-echo "IN RA DAY VUA NHAP "
+echo "day so vua nhap la: "
 i=0
 while [[ $i -lt $n ]]
 do
@@ -39,7 +39,7 @@ do
 	i=$(($i+1))
 
 done
-echo "TONG LA $sum"
+echo "tong:  $sum"
 
 #commit lan 2
 
